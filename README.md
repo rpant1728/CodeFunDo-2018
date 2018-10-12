@@ -1,2 +1,4 @@
 # CodeFunDo-2018
 Project submission for CodeFunDo 2018.
+
+In the spate of recent devastating natural disasters namely Hurricane Michael and Cyclone Titli, it becomes increasingly important that there exist a method to predict and subsequently provide a better way of relief to those affected by these catastrophes. We wish to implement a method to predict and manage them better using datasets provided by NASA (https://api.nasa.gov/api.html#earth). Live images of places affected by these disasters will help governments in assessing the damage inflicted in less accessible regions. People can use it to see approaching disasters and find places for their safety. We also wish to implement a way in which people can broadcast their position and status to other people which will be exceedingly helpful for those trapped due to the aftermath of these disasters.
