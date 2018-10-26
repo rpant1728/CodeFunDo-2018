@@ -9,6 +9,7 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var router = require('./routes/index');
 var values = require('./private')
+var http = require('http');
 require('./config/passport');
 
 var mongoDB = "mongodb://" + values.username + ":" + values.password + "@ds123963.mlab.com:23963/express";
@@ -18,6 +19,9 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 var app = express();
+var server = http.createServer(app);
+var port = process.env.PORT || '3000';
+server.listen(port);
 
 app.use(passport.initialize());
 
